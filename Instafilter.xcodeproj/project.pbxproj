@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F94945A9285F95BA0076FD63 /* ConfirmationDialogContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94945A8285F95BA0076FD63 /* ConfirmationDialogContentView.swift */; };
 		F9C248FB285E4D30000ACEA3 /* InstafilterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C248FA285E4D30000ACEA3 /* InstafilterApp.swift */; };
 		F9C248FD285E4D30000ACEA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C248FC285E4D30000ACEA3 /* ContentView.swift */; };
 		F9C248FF285E4D31000ACEA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C248FE285E4D31000ACEA3 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F94945A8285F95BA0076FD63 /* ConfirmationDialogContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDialogContentView.swift; sourceTree = "<group>"; };
 		F9C248F7285E4D30000ACEA3 /* Instafilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C248FA285E4D30000ACEA3 /* InstafilterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterApp.swift; sourceTree = "<group>"; };
 		F9C248FC285E4D30000ACEA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				F9C248FC285E4D30000ACEA3 /* ContentView.swift */,
 				F9C248FE285E4D31000ACEA3 /* Assets.xcassets */,
 				F9C24900285E4D31000ACEA3 /* Preview Content */,
+				F94945A8285F95BA0076FD63 /* ConfirmationDialogContentView.swift */,
 			);
 			path = Instafilter;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94945A9285F95BA0076FD63 /* ConfirmationDialogContentView.swift in Sources */,
 				F9C248FD285E4D30000ACEA3 /* ContentView.swift in Sources */,
 				F9C248FB285E4D30000ACEA3 /* InstafilterApp.swift in Sources */,
 			);
