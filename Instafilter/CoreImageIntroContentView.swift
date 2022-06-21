@@ -29,9 +29,11 @@ struct CoreImageIntroContentView: View {
         let beginImage = CIImage(image: inputImage)
         
         let context = CIContext()
-        let currentFilter = CIFilter.crystallize()
+        let currentFilter = CIFilter.twirlDistortion()
         currentFilter.inputImage = beginImage
-        currentFilter.radius = 200
+        currentFilter.radius = 1500
+        currentFilter.center = CGPoint(x: inputImage.size.width / 2, y: inputImage.size.height / 2)
+
         
         // get a CIImage from our filter or exit if that fails
         guard let outputImage = currentFilter.outputImage else { return }
