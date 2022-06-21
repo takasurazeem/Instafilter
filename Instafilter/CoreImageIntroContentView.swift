@@ -29,9 +29,9 @@ struct CoreImageIntroContentView: View {
         let beginImage = CIImage(image: inputImage)
         
         let context = CIContext()
-        let currentFilter = CIFilter.pixellate()
+        let currentFilter = CIFilter.crystallize()
         currentFilter.inputImage = beginImage
-        currentFilter.scale = 100
+        currentFilter.radius = 200
         
         // get a CIImage from our filter or exit if that fails
         guard let outputImage = currentFilter.outputImage else { return }
