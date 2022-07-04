@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  BlurPracticeContentView.swift
 //  Instafilter
 //
 //  Created by Takasur Azeem on 18/06/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BlurPracticeContentView: View {
     
     @State private var blurAmount = 0.0
     
@@ -26,6 +26,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        BlurPracticeContentView()
     }
 }

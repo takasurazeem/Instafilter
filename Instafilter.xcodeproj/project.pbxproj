@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		F94945A9285F95BA0076FD63 /* ConfirmationDialogContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94945A8285F95BA0076FD63 /* ConfirmationDialogContentView.swift */; };
 		F94945AB285F97460076FD63 /* CoreImageIntroContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94945AA285F97460076FD63 /* CoreImageIntroContentView.swift */; };
+		F9C06F612872DCA000036C4E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C06F602872DCA000036C4E /* ImagePicker.swift */; };
+		F9C06F632872DDBB00036C4E /* ImagePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C06F622872DDBB00036C4E /* ImagePickerContentView.swift */; };
 		F9C248FB285E4D30000ACEA3 /* InstafilterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C248FA285E4D30000ACEA3 /* InstafilterApp.swift */; };
-		F9C248FD285E4D30000ACEA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C248FC285E4D30000ACEA3 /* ContentView.swift */; };
+		F9C248FD285E4D30000ACEA3 /* BlurPracticeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C248FC285E4D30000ACEA3 /* BlurPracticeContentView.swift */; };
 		F9C248FF285E4D31000ACEA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C248FE285E4D31000ACEA3 /* Assets.xcassets */; };
 		F9C24902285E4D31000ACEA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C24901285E4D31000ACEA3 /* Preview Assets.xcassets */; };
 		F9C2490C285E4D31000ACEA3 /* InstafilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C2490B285E4D31000ACEA3 /* InstafilterTests.swift */; };
@@ -38,9 +40,11 @@
 /* Begin PBXFileReference section */
 		F94945A8285F95BA0076FD63 /* ConfirmationDialogContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDialogContentView.swift; sourceTree = "<group>"; };
 		F94945AA285F97460076FD63 /* CoreImageIntroContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageIntroContentView.swift; sourceTree = "<group>"; };
+		F9C06F602872DCA000036C4E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F9C06F622872DDBB00036C4E /* ImagePickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerContentView.swift; sourceTree = "<group>"; };
 		F9C248F7285E4D30000ACEA3 /* Instafilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C248FA285E4D30000ACEA3 /* InstafilterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterApp.swift; sourceTree = "<group>"; };
-		F9C248FC285E4D30000ACEA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F9C248FC285E4D30000ACEA3 /* BlurPracticeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurPracticeContentView.swift; sourceTree = "<group>"; };
 		F9C248FE285E4D31000ACEA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9C24901285E4D31000ACEA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F9C24907285E4D31000ACEA3 /* InstafilterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstafilterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,11 +103,13 @@
 			isa = PBXGroup;
 			children = (
 				F9C248FA285E4D30000ACEA3 /* InstafilterApp.swift */,
-				F9C248FC285E4D30000ACEA3 /* ContentView.swift */,
+				F9C248FC285E4D30000ACEA3 /* BlurPracticeContentView.swift */,
 				F94945A8285F95BA0076FD63 /* ConfirmationDialogContentView.swift */,
+				F94945AA285F97460076FD63 /* CoreImageIntroContentView.swift */,
+				F9C06F602872DCA000036C4E /* ImagePicker.swift */,
+				F9C06F622872DDBB00036C4E /* ImagePickerContentView.swift */,
 				F9C248FE285E4D31000ACEA3 /* Assets.xcassets */,
 				F9C24900285E4D31000ACEA3 /* Preview Content */,
-				F94945AA285F97460076FD63 /* CoreImageIntroContentView.swift */,
 			);
 			path = Instafilter;
 			sourceTree = "<group>";
@@ -265,7 +271,9 @@
 			files = (
 				F94945AB285F97460076FD63 /* CoreImageIntroContentView.swift in Sources */,
 				F94945A9285F95BA0076FD63 /* ConfirmationDialogContentView.swift in Sources */,
-				F9C248FD285E4D30000ACEA3 /* ContentView.swift in Sources */,
+				F9C06F632872DDBB00036C4E /* ImagePickerContentView.swift in Sources */,
+				F9C06F612872DCA000036C4E /* ImagePicker.swift in Sources */,
+				F9C248FD285E4D30000ACEA3 /* BlurPracticeContentView.swift in Sources */,
 				F9C248FB285E4D30000ACEA3 /* InstafilterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
