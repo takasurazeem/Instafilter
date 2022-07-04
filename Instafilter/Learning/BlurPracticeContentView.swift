@@ -24,7 +24,7 @@ struct BlurPracticeContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct BlurPracticeContentView_Previews: PreviewProvider {
     static var previews: some View {
         BlurPracticeContentView()
     }

@@ -10,6 +10,7 @@
 		F94945A9285F95BA0076FD63 /* ConfirmationDialogContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94945A8285F95BA0076FD63 /* ConfirmationDialogContentView.swift */; };
 		F94945AB285F97460076FD63 /* CoreImageIntroContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94945AA285F97460076FD63 /* CoreImageIntroContentView.swift */; };
 		F99FD7002873708800A68552 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FD6FF2873708800A68552 /* ImageSaver.swift */; };
+		F99FD7032873724F00A68552 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FD7022873724F00A68552 /* ContentView.swift */; };
 		F9C06F612872DCA000036C4E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C06F602872DCA000036C4E /* ImagePicker.swift */; };
 		F9C06F632872DDBB00036C4E /* ImagePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C06F622872DDBB00036C4E /* ImagePickerContentView.swift */; };
 		F9C248FB285E4D30000ACEA3 /* InstafilterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C248FA285E4D30000ACEA3 /* InstafilterApp.swift */; };
@@ -42,6 +43,7 @@
 		F94945A8285F95BA0076FD63 /* ConfirmationDialogContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDialogContentView.swift; sourceTree = "<group>"; };
 		F94945AA285F97460076FD63 /* CoreImageIntroContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageIntroContentView.swift; sourceTree = "<group>"; };
 		F99FD6FF2873708800A68552 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		F99FD7022873724F00A68552 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9C06F602872DCA000036C4E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F9C06F622872DDBB00036C4E /* ImagePickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerContentView.swift; sourceTree = "<group>"; };
 		F9C248F7285E4D30000ACEA3 /* Instafilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F99FD7012873724300A68552 /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				F9C248FC285E4D30000ACEA3 /* BlurPracticeContentView.swift */,
+				F94945A8285F95BA0076FD63 /* ConfirmationDialogContentView.swift */,
+				F94945AA285F97460076FD63 /* CoreImageIntroContentView.swift */,
+				F9C06F602872DCA000036C4E /* ImagePicker.swift */,
+				F9C06F622872DDBB00036C4E /* ImagePickerContentView.swift */,
+				F99FD6FF2873708800A68552 /* ImageSaver.swift */,
+			);
+			path = Learning;
+			sourceTree = "<group>";
+		};
 		F9C248EE285E4D30000ACEA3 = {
 			isa = PBXGroup;
 			children = (
@@ -105,12 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				F9C248FA285E4D30000ACEA3 /* InstafilterApp.swift */,
-				F9C248FC285E4D30000ACEA3 /* BlurPracticeContentView.swift */,
-				F94945A8285F95BA0076FD63 /* ConfirmationDialogContentView.swift */,
-				F94945AA285F97460076FD63 /* CoreImageIntroContentView.swift */,
-				F9C06F602872DCA000036C4E /* ImagePicker.swift */,
-				F9C06F622872DDBB00036C4E /* ImagePickerContentView.swift */,
-				F99FD6FF2873708800A68552 /* ImageSaver.swift */,
+				F99FD7022873724F00A68552 /* ContentView.swift */,
+				F99FD7012873724300A68552 /* Learning */,
 				F9C248FE285E4D31000ACEA3 /* Assets.xcassets */,
 				F9C24900285E4D31000ACEA3 /* Preview Content */,
 			);
@@ -274,6 +285,7 @@
 			files = (
 				F94945AB285F97460076FD63 /* CoreImageIntroContentView.swift in Sources */,
 				F94945A9285F95BA0076FD63 /* ConfirmationDialogContentView.swift in Sources */,
+				F99FD7032873724F00A68552 /* ContentView.swift in Sources */,
 				F9C06F632872DDBB00036C4E /* ImagePickerContentView.swift in Sources */,
 				F99FD7002873708800A68552 /* ImageSaver.swift in Sources */,
 				F9C06F612872DCA000036C4E /* ImagePicker.swift in Sources */,
