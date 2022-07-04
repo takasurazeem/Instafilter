@@ -20,11 +20,18 @@ struct ImagePickerContentView: View {
             Button("Select Image") {
                 showingImagePicker = true
             }
-            .sheet(isPresented: $showingImagePicker) {
-                ImagePicker(image: $inputImage)
+            
+            Button("Save Image") {
+                guard let inputImage = inputImage else { return }
+                let imageSaver = ImageSaver()
+                imageSaver.writeToPhotoAlbum(image: inputImage)
             }
-            .onChange(of: inputImage) { _ in loadImage() }
         }
+        .sheet(isPresented: $showingImagePicker) {
+            ImagePicker(image: $inputImage)
+        }
+        .onChange(of: inputImage) { _ in loadImage() }
+        
     }
     
     func loadImage() {
