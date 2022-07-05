@@ -89,9 +89,7 @@
 				F9C248FC285E4D30000ACEA3 /* BlurPracticeContentView.swift */,
 				F94945A8285F95BA0076FD63 /* ConfirmationDialogContentView.swift */,
 				F94945AA285F97460076FD63 /* CoreImageIntroContentView.swift */,
-				F9C06F602872DCA000036C4E /* ImagePicker.swift */,
 				F9C06F622872DDBB00036C4E /* ImagePickerContentView.swift */,
-				F99FD6FF2873708800A68552 /* ImageSaver.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -121,6 +119,8 @@
 			children = (
 				F9C248FA285E4D30000ACEA3 /* InstafilterApp.swift */,
 				F99FD7022873724F00A68552 /* ContentView.swift */,
+				F9C06F602872DCA000036C4E /* ImagePicker.swift */,
+				F99FD6FF2873708800A68552 /* ImageSaver.swift */,
 				F99FD7012873724300A68552 /* Learning */,
 				F9C248FE285E4D31000ACEA3 /* Assets.xcassets */,
 				F9C24900285E4D31000ACEA3 /* Preview Content */,

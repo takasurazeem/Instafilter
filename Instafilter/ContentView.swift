@@ -15,8 +15,13 @@ struct ContentView: View {
     @State private var inputImage: UIImage?
     @State private var filterIntensity = 0.5
     
+    @State private var processedImage: UIImage?
+    
     @State private var showingImagePicker = false
     @State private var showingFilterSheet = false
+    @State private var showingSaveAlert = false
+    @State private var alertTitle = ""
+    @State private var alertMessage = ""
     
     @State private var currentFilter: CIFilter = CIFilter.sepiaTone()
     let context = CIContext()
@@ -72,6 +77,9 @@ struct ContentView: View {
                 Button("Vignette") { setFilter(CIFilter.vignette()) }
                 Button("Cancel", role: .cancel) { }
             }
+            .alert(isPresented: $showingSaveAlert) {
+                Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+            }
         }
     }
     
@@ -89,7 +97,21 @@ struct ContentView: View {
     }
     
     func save() {
+        guard let processedImage = processedImage else { return }
         
+        let imageSaver = ImageSaver()
+        imageSaver.successHandler = {
+            alertTitle = "Success"
+            alertMessage = "Image was saved successsfully."
+        }
+        
+        imageSaver.errorHandler = {
+            alertTitle = "Error"
+            alertMessage = "Reason: \($0.localizedDescription)"
+        }
+        
+        imageSaver.writeToPhotoAlbum(image: processedImage)
+        showingSaveAlert = true
     }
     
     func applyProcessing() {
@@ -104,6 +126,7 @@ struct ContentView: View {
         if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
             let uiImage = UIImage(cgImage: cgimg)
             image = Image(uiImage: uiImage)
+            processedImage = uiImage
         }
     }
 }
